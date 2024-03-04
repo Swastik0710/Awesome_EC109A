@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible"
+        content="IE=edge">
+        <meta name="viewport"
+        content="width=device-width,
+        initial-scale=1.0">
+        <title>Tic Tac Toe</title>
+        <style>
+            *{
+                font-family: Cascadia Code;
+            }
+            .container{
+                display: grid;
+                grid-template-columns: repeat(3,100px);
+                place-content: center;
+            }
+            .container>div{
+                width: 100px;
+                height: 100px;
+                border: 1px solid;
+                font-size: 60px;
+                display: grid;
+                place-content: center;
+            }
+            h1{
+                color: red;
+                text-align: center;
+                text-decoration: underline;
+                margin-top: 3rem;
+            }
+        </style>
+    </head>
+    <body bgcolor="LIGHTGREY">
+        <h1>Tic Tac Toe</h1>
+        <div class="container">
+            <div id="div1" onclick="runfn(this)"></div>
+            <div id="div2" onclick="runfn(this)"></div>
+            <div id="div3" onclick="runfn(this)"></div>
+            <div id="div4" onclick="runfn(this)"></div>
+            <div id="div5" onclick="runfn(this)"></div>
+            <div id="div6" onclick="runfn(this)"></div>
+            <div id="div7" onclick="runfn(this)"></div>
+            <div id="div8" onclick="runfn(this)"></div>
+            <div id="div9" onclick="runfn(this)"></div>
+        </div> 
+    </body>
+    <script>
+        player=1
+        function runfn(element){
+            if(winner=check()){
+                alert(winner+' has won the match');
+                location.reload();
+            }
+            if(player%2!=0){
+                element.innerHTML="O";
+                player++;
+            }else{
+                element.innerHTML="X";
+                player++;
+            }
+        }
+        function check(){
+            d1=div1.innerHTML;
+            d2=div2.innerHTML;
+            d3=div3.innerHTML;
+            d4=div4.innerHTML;
+            d5=div5.innerHTML;
+            d6=div6.innerHTML;
+            d7=div7.innerHTML;
+            d8=div8.innerHTML;
+            d9=div9.innerHTML;
+            if(d1==d2 && d2==d3 && d1!="" && d2!="" && d3!=""){
+                return d1;
+            }else if(d4==d5 && d5==d6 && d4!="" && d5!="" && d6!=""){
+                return d4;
+            }else if(d7==d8 && d8==d9 && d7!="" && d8!="" && d9!=""){
+                return d7;
+            }else if(d1==d4 && d4==d7 && d7!="" && d4!="" && d1!=""){
+                return d1;
+            }else if(d2==d5 && d5==d8 && d8!="" && d5!="" && d2!=""){
+                return d2;
+            }else if(d3==d6 && d6==d9 && d9!="" && d6!="" && d3!=""){
+                return d3;
+            }else if(d1==d5 && d5==d9 && d1!="" && d5!="" && d9!=""){
+                return d1;
+            }else if(d3==d5 && d5==d7 && d3!="" && d5!="" && d7!=""){
+                return d3;
+            }
+        }
+    </script>
+</html>
