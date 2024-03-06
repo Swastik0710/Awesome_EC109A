@@ -1,37 +1,18 @@
 # Project-ID - EC109A
-# Hacking Guide for MyGame 😎
+# My Game Website 😎
 
-## .MyGame 🤞
+We are team "Awesome" presenting the My Game Website. On the peak of the initial project prepared by the "DevWrap" team we have enhanced the website using HTML and CSS.
 
-Make any game using HTML CSS Js 😊
+# Members of Awesome
 
+### Team Lead
 
-## How to setup it on your device ?? 🤔
+Swastik Bhattacharya
 
-### 🤞 Step 1
+### Other Members
 
-Click on Fork and rename it as
+Titas Debnath
 
-#### TeamName_ProjectID
-### 🤞 Step 2 
-Copy the https link from Code Section
+Sujan Manna
 
-#### Open Command Prompt and type
-
-```http
-  cd desktop
-  git clone <https link>
-```
-Now the project is on your desktop now open it with your code editor
-now you are got to go for hacking !!
-
-
-
-## 😒 What You are not able to change? 
-
-🤞The main landing page design
-
-
-## 👌 Ask your doubt on Discord
-
-[Click Here](https://discord.com/invite/8qJBt5pby5)  👈👈
+Pritam Choudhury
